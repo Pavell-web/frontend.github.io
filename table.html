@@ -5,13 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Создание таблицы</title>
     <style>
+        .table 
+        {
+            border: 5px solid blue;
+            border-collapse: collapse;
+        }
 
+        .table-header {
+            background-color: rgb(178, 213, 252);
+        }
+
+        .table-body {
+            background-color: rgb(231, 250, 186);
+        }
+
+        .table-footer {
+            background-color: rgb(253, 203, 203);
+        }
+
+        .table-row,
+        .table-data {
+            border: 2px solid lightgreen;
+        }
+
+        .table-data {
+
+        }
 
 
     </style>
 </head>
 <body>
-    
+    <table class="table">
+        <tbody class="table-body">
+            <tr class="table-row">
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+
+            </tr>
+            <tr class="table-row">
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="table-footer">     
+            <tr class="table-row">
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+                <td class="table-data">Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </tfoot>
+
+       
+
+    </table>
+
+    <input type="color">
+    <input type="range" min="1" max="10" value="3"> 
 
     <script src="js/createTable.js"></script>
 </body>
